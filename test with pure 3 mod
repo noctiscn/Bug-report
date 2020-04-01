@@ -1,0 +1,349 @@
+Log uploaded on Wednesday, April 1, 2020, 3:56:50 PM
+Loaded mods:
+Harmony(brrainz.harmony): 0Harmony(2.0.0.8), HarmonyMod(1.0.0.3)
+Core(Ludeon.RimWorld): (no assemblies)
+Royalty(Ludeon.RimWorld.Royalty): (no assemblies)
+HugsLib(UnlimitedHugs.HugsLib)[ov:7.1.3]: 0Harmony(av:2.0.0.8,fv:1.2.0.1), HugsLib(av:1.0.0,fv:7.1.3)
+JecsTools(jecrell.jecstools): 0Harmony(2.0.0.8), 0JecsTools(1.2.0.1), AbilityUser(1.18.0), AbilityUserAI(1.18.0), CompActivatableEffect(1.18.0), CompAnimated(1.18.0), CompBalloon(1.18.0), CompBigBox(1.18.0), CompDeflector(1.18.0), CompDelayedSpawner(1.18.0), CompExtraSounds(1.18.0), CompInstalledPart(1.18.0), CompLumbering(1.18.0), CompOverlays(1.18.0), CompOversizedWeapon(1.18.0), CompSlotLoadable(1.18.0), CompToggleDef(1.18.0), CompVehicle(1.17.0.1), PawnShields(1.0.0), ThinkNodes(1.0.0)
+A RimWorld of Magic(Torann.ARimworldOfMagic): TorannMagic(2.4.0.6)
+
+Active Harmony patches:
+AbilityAIDef.CanPawnUseThisAbility: PRE: TorannMagic.TorannMagicMod+CanPawnUseThisAbility_Patch.Prefix
+AbilityDecisionConditionalNode_CasterHealth.CanContinueTraversing: PRE: TorannMagic.TorannMagicMod+CasterHealth_Check_Patch.Prefix
+AbilityDef.GetJob: PRE: TorannMagic.TorannMagicMod+AbilityDef_Patch.Prefix
+AbilityWorker.CanPawnUseThisAbility: PRE: TorannMagic.TorannMagicMod+AbilityWorker_CanPawnUseThisAbility_Patch.Prefix
+AbilityWorker.TargetAbilityFor: PRE: TorannMagic.TorannMagicMod+AbilityWorker_TargetAbilityFor_Patch.Prefix
+ApparelUtility.CanWearTogether: post: JecsTools.HarmonyPatches.Post_CanWearTogether
+ApparelUtility.HasPartsToWear: post: TorannMagic.TorannMagicMod+BracersOfPacifist_Wear_Prevention.Postfix
+AreaManager.AddStartingAreas: post: TorannMagic.TorannMagicMod.AreaManager_AddMagicZonesToStartingAreas
+ArmorUtility.ApplyArmor: PRE: JecsTools.HarmonyPatches.ApplyProperDamage
+ArmorUtility.GetPostArmorDamage: post: JecsTools.HarmonyPatches.Post_GetPostArmorDamage
+AttackTargetFinder.CanReach: PRE: TorannMagic.TorannMagicMod+AttackTargetFinder_CanReach_Patch.Prefix
+AttackTargetFinder.CanSee: PRE: TorannMagic.TorannMagicMod+AttackTargetFinder_CanSee_Patch.Prefix
+AutoUndrafter.AutoUndraftTick: PRE: TorannMagic.TorannMagicMod.AutoUndrafter_Undead_Prefix
+Building_TurretGun.Tick: post: TorannMagic.TorannMagicMod.TurretGunTick_Overdrive_Postfix
+Caravan.GetGizmos: post: JecsTools.HarmonyCaravanPatches.GetGizmos_Jobs
+Caravan.GetInspectString: post: JecsTools.HarmonyCaravanPatches.GetInspectString_Jobs
+Caravan.get_NightResting: PRE: TorannMagic.TorannMagicMod.Get_NightResting_Undead
+CaravanFormingUtility.AllSendablePawns: post: TorannMagic.TorannMagicMod+AddNullException_Alerts_Patch.Postfix
+Caravan_PathFollower.CostToMove: post: TorannMagic.TorannMagicMod+CostToMove_Caravan_Patch.CostToMove_Caravan_Postfix
+Caravan_PathFollower.CostToPayThisTick: post: TorannMagic.TorannMagicMod+CostToPayThisTick_Base_Patch.Postfix
+CastPositionFinder.TryFindCastPosition: PRE: TorannMagic.TorannMagicMod+TryFindCastPosition_Base_Patch.Prefix
+ColonistBarColonistDrawer.DrawIcons: post: TorannMagic.TorannMagicMod+ColonistBarColonistDrawer_Patch.Postfix
+Command_PawnAbility.GizmoOnGUI: PRE: TorannMagic.TorannMagicMod+GizmoOnGUI_Prefix_Patch.Prefix
+CompAbilityItem.PostDrawExtraSelectionOverlays: PRE: TorannMagic.TorannMagicMod.CompAbilityItem_Overlay_Prefix
+CompMilkable.CompInspectStringExtra: post: TorannMagic.TorannMagicMod+CompMilkable_Patch.Postfix
+CompPowerPlant.CompTick: post: TorannMagic.TorannMagicMod.PowerCompTick_Overdrive_Postfix
+CompRefuelable.PostDraw: PRE: TorannMagic.TorannMagicMod.CompRefuelable_DrawBar_Prefix
+Corpse.PostMake: post: TorannMagic.TorannMagicMod+Corpse_UndeadStage_Patch.Postfix
+DamageWorker.ExplosionStart: PRE: TorannMagic.TorannMagicMod+ExplosionNoShaker_Patch.Prefix
+DaysWorthOfFoodCalculator.ApproxDaysWorthOfFood: post: TorannMagic.TorannMagicMod.DaysWorthOfFoodCalc_Undead_Postfix
+DebugWindowsOpener.DevToolStarterOnGUI: TRANS: HugsLib.Patches.DevToolStarterOnGUI_Patch.ExtendButtonsWindow
+DebugWindowsOpener.DrawButtons: TRANS: HugsLib.Patches.DebugWindowsOpener_Patch.DrawAdditionalButtons
+Dialog_Options.DoWindowContents: TRANS: HugsLib.Patches.Dialog_Options_Patch.ReplaceModOptionsButton
+EditWindow_Log.DoMessagesListing: PRE: HugsLib.Patches.EditWindow_Log_Patch.ExtraLogWindowButtons
+Faction.Notify_MemberDied: PRE: JecsTools.HarmonyPatches.Notify_MemberDied
+FertilityGrid.CalculateFertilityAt: post: TorannMagic.TorannMagicMod+FertilityGrid_Patch.Postfix
+FloatMenuMakerMap.AddHumanlikeOrders: post: JecsTools._HumanlikeOrdersUtility.AddHumanlikeOrders_PostFix, TorannMagic.TorannMagicMod+FloatMenuMakerMap_Patch.Postfix, [100]TorannMagic.TorannMagicMod.AddHumanLikeOrders_RestrictEquipmentPatch
+FloatMenuMakerMap.AddJobGiverWorkOrders: PRE: TorannMagic.TorannMagicMod+SkipPolymorph_UndraftedOrders_Patch.Prefix post: TorannMagic.TorannMagicMod+FloatMenuMakerMap_MagicJobGiver_Patch.Postfix
+FloatMenuMakerMap.ChoicesAtFor: post: TorannMagic.TorannMagicMod+FloatMenuMakerMap_ROMV_Undead_Patch.Postfix
+Game.DeinitAndRemoveMap: post: HugsLib.Patches.Game_DeinitAndRemoveMap_Patch.MapRemovalHook
+Game.FillComponents: PRE: HugsLib.Patches.Game_FillComponents_Patch.GameInitializationHook
+Game.FinalizeInit: post: HugsLib.Patches.Game_FinalizeInit_Patch.WorldLoadedHook
+GenConstruct.BlocksConstruction: post: JecsTools.HarmonyPatches.BlocksConstruction_PostFix
+GenDraw.DrawMeshNowOrLater: PRE: TorannMagic.TorannMagicMod+DrawMesh_Cloaks_Patch.Prefix
+GenDraw.DrawRadiusRing: PRE: TorannMagic.TorannMagicMod.DrawRadiusRing_Patch
+GenGrid.Standable: PRE: TorannMagic.TorannMagicMod+Standable_Patch.Prefix
+GenSpawn.SpawningWipes: post: JecsTools.HarmonyPatches.SpawningWipes_PostFix
+HealthAIUtility.ShouldSeekMedicalRest: post: TorannMagic.TorannMagicMod+Arcane_ManaWeakness_BedRest_Patch.Postfix
+HealthUtility.AdjustSeverity: PRE: TorannMagic.TorannMagicMod.HealthUtility_HeatCold_HediffGiverForUndead
+Hediff_Injury.PostAdd: PRE: TorannMagic.TorannMagicMod+Hediff_Injury_RemoveError_Prefix.Prefix
+ITab_Pawn_Gear.DrawThingRow: post: CompSlotLoadable.HarmonyCompSlotLoadable.DrawThingRow_PostFix, TorannMagic.TorannMagicMod+ITab_Pawn_Gear_Patch.Postfix
+ITab_Pawn_Gear.InterfaceDrop: PRE: CompInstalledPart.HarmonyCompInstalledPart.InterfaceDrop_PreFix
+ITab_Pawn_Gear.TryDrawOverallArmor: post: TorannMagic.TorannMagicMod+ITab_Pawn_GearFillTab_Patch.Postfix
+IncidentParmsUtility.GetDefaultPawnGroupMakerParms: post: TorannMagic.TorannMagicMod+GetDefaultPawnGroupMakerParms_Patch.Postfix
+IncidentWorker.TryExecute: PRE: TorannMagic.TorannMagicMod+IncidentWorker_TryExecute_Prefix_Patch.Prefix
+IncidentWorker_DiseaseAnimal.PotentialVictimCandidates: post: TorannMagic.TorannMagicMod.DiseaseHuman_Candidates_Patch
+IncidentWorker_DiseaseHuman.PotentialVictimCandidates: post: TorannMagic.TorannMagicMod.DiseaseHuman_Candidates_Patch
+IncidentWorker_SelfTame.Candidates: post: TorannMagic.TorannMagicMod.SelfTame_Candidates_Patch
+InspirationHandler.TryStartInspiration: PRE: TorannMagic.TorannMagicMod+InspirationHandler_Patch.Prefix
+InteractionWorker.Interacted: post: TorannMagic.TorannMagicMod+GearRepair_InteractionWorker_Postfix.Postfix
+JobDriver_Mine.ResetTicksToPickHit: post: TorannMagic.TorannMagicMod+JobDriver_Mine_Patch.Postfix
+JobGiver_EatRandom.TryGiveJob: PRE: TorannMagic.TorannMagicMod+JobGiver_EatRandom_Patch.Prefix
+JobGiver_GetFood.TryGiveJob: PRE: TorannMagic.TorannMagicMod+JobGiver_GetFood_Patch.Prefix
+JobGiver_Haul.TryGiveJob: PRE: TorannMagic.TorannMagicMod+JobGiver_MinionHaul_Patch.Prefix
+JobGiver_Kidnap.TryGiveJob: post: TorannMagic.TorannMagicMod+JobGiver_Kidnap_Patch.Postfix
+JobGiver_Mate.TryGiveJob: post: TorannMagic.TorannMagicMod+JobGiver_Mate_Patch.Postfix
+JobGiver_SocialFighting.TryGiveJob: post: TorannMagic.TorannMagicMod+JobGiver_SocialFighting_Patch.Postfix
+LanguageDatabase.SelectLanguage: PRE: HugsLib.Patches.LanguageDatabase_Patch.ForceRestartAfterLangChange
+LordToil_Siege.CanBeBuilder: PRE: TorannMagic.TorannMagicMod+CanBeBuilder_Patch.Prefix
+LordToil_Siege.Notify_PawnLost: PRE: TorannMagic.TorannMagicMod+Notify_PawnLost_Patch.Prefix
+Map.ConstructComponents: post: HugsLib.Patches.Map_ConstructComponents_Patch.MapComponentsInitHook
+Map.FinalizeInit: post: HugsLib.Patches.Map_FinalizeInit_Patch.MapLoadedHook
+MapComponentUtility.MapGenerated: post: HugsLib.Patches.MapComponentUtility_MapGenerated_Patch.MapGeneratedHook
+MapParent.CheckRemoveMapNow: PRE: TorannMagic.TorannMagicMod+CheckRemoveMapNow_Patch.Prefix
+MemoryThoughtHandler.TryGainMemory: PRE: TorannMagic.TorannMagicMod.MemoryThoughtHandler_PreventDisturbedRest_Prefix
+MentalStateHandler.TryStartMentalState: PRE: TorannMagic.TorannMagicMod+MentalStateHandler_Patch.Prefix
+ModsConfig.RestartFromChangedMods: PRE: HugsLib.Patches.ModsConfig_RestartFromChangedMods_Patch.QuickRestartInDevMode
+NegativeInteractionUtility.NegativeInteractionChanceFactor: post: TorannMagic.TorannMagicMod+NegativeInteractionChanceFactor_Patch.Postfix
+Pawn.CheckAcceptArrest: PRE: TorannMagic.TorannMagicMod+CheckArrest_Undead_Patch.Prefix
+Pawn.ExitMap: PRE: CompActivatableEffect.HarmonyCompActivatableEffect.ExitMap_PreFix
+Pawn.GetGizmos: post: [2000]TorannMagic.TorannMagicMod.Pawn_Gizmo_ActionPatch, TorannMagic.TorannMagicMod.Pawn_Gizmo_TogglePatch, CompActivatableEffect.HarmonyCompActivatableEffect.GetGizmosPrefix, CompSlotLoadable.HarmonyCompSlotLoadable.GetGizmos_PostFix, TorannMagic.TorannMagicMod+Pawn_DraftController_GetGizmos_Patch.Postfix
+Pawn.Kill: PRE: TorannMagic.TorannMagicMod+Undead_Kill_Prefix.Prefix
+Pawn.PostApplyDamage: post: CompSlotLoadable.HarmonyCompSlotLoadable.PostApplyDamage_PostFix
+Pawn.PreApplyDamage: PRE: TorannMagic.TorannMagicMod+Pawn_PreApplyDamage.Prefix
+Pawn.Tick: post: PawnShields.HarmonyPatches.Patch_Pawn_Tick
+Pawn.VerifyReservations: PRE: TorannMagic.TorannMagicMod+VerifyReservations_Prefix_Patch.Prefix
+Pawn.get_IsColonist: PRE: TorannMagic.TorannMagicMod.Get_IsColonist_Polymorphed
+PawnApparelGenerator.GenerateStartingApparelFor: post: JecsTools.HarmonyPatches.GenerateStartingApparelFor_PostFix
+PawnDiedOrDownedThoughtsUtility.AppendThoughts_ForHumanlike: PRE: TorannMagic.TorannMagicMod.AppendThoughts_ForHumanlike_PrefixPatch
+PawnDiedOrDownedThoughtsUtility.AppendThoughts_Relations: PRE: TorannMagic.TorannMagicMod.AppendThoughts_Relations_PrefixPatch
+PawnDiedOrDownedThoughtsUtility.TryGiveThoughts: PRE: TorannMagic.TorannMagicMod.TryGiveThoughts_PrefixPatch
+PawnGenerator.GenerateGearFor: post: PawnShields.HarmonyPatches.Patch_PawnGenerator_GenerateGearFor
+PawnGenerator.GeneratePawn: post: JecsTools.HarmonyPatches.Post_GeneratePawn
+PawnGenerator.GenerateTraits: post: TorannMagic.TorannMagicMod+PawnGenerator_Patch.Postfix
+PawnGroupKindWorker.GeneratePawns: post: AbilityUser.AbilityUserMod.GeneratePawns_PostFix
+PawnGroupMakerUtility.GeneratePawns: post: JecsTools.HarmonyPatches.GeneratePawns
+PawnRenderer.DrawEquipmentAiming: PRE: CompInstalledPart.HarmonyCompInstalledPart.DrawEquipmentAiming_PreFix, CompOversizedWeapon.HarmonyCompOversizedWeapon.DrawEquipmentAimingPreFix post: CompActivatableEffect.HarmonyCompActivatableEffect.DrawEquipmentAimingPostFix, CompDeflector.HarmonyCompDeflector.DrawEquipmentAimingPostFix
+PawnRenderer.RenderPawnAt: PRE: TorannMagic.TorannMagicMod.PawnRenderer_Undead_Prefix, TorannMagic.TorannMagicMod.PawnRenderer_Blur_Prefix post: PawnShields.HarmonyPatches.Patch_PawnRenderer_RenderPawnAt
+PawnRenderer.RenderPawnInternal: PRE: TorannMagic.TorannMagicMod.PawnRenderer_UndeadInternal_Prefix
+PawnUtility.IsTravelingInTransportPodWorldObject: PRE: [2000]TorannMagic.TorannMagicMod.IsTravelingInTeleportPod_Prefix
+Pawn_ApparelTracker.Notify_ApparelAdded: post: AbilityUser.AbilityUserMod.Notify_ApparelAdded_PostFix
+Pawn_ApparelTracker.Notify_ApparelRemoved: post: AbilityUser.AbilityUserMod.Notify_ApparelRemoved_PostFix
+Pawn_DraftController.set_Drafted: post: CompActivatableEffect.HarmonyCompActivatableEffect.set_DraftedPostFix, CompActivatableEffect.HarmonyCompActivatableEffect.set_DraftedPostFix
+Pawn_EquipmentTracker.AddEquipment: post: TorannMagic.TorannMagicMod.PawnEquipment_Add_Postfix
+Pawn_EquipmentTracker.MakeRoomFor: post: PawnShields.HarmonyPatches.Patch_Pawn_EquipmentTracker_MakeRoomFor
+Pawn_EquipmentTracker.Notify_EquipmentAdded: post: AbilityUser.AbilityUserMod.Notify_EquipmentAdded_PostFix
+Pawn_EquipmentTracker.Notify_EquipmentRemoved: post: AbilityUser.AbilityUserMod.Notify_EquipmentRemoved_PostFix
+Pawn_EquipmentTracker.TryDropEquipment: PRE: CompActivatableEffect.HarmonyCompActivatableEffect.TryDropEquipment_PreFix, CompInstalledPart.HarmonyCompInstalledPart.TryDropEquipment_PreFix post: TorannMagic.TorannMagicMod.PawnEquipment_Drop_Postfix
+Pawn_HealthTracker.CheckForStateChange: PRE: TorannMagic.TorannMagicMod+CheckForStateChange_Patch.Prefix post: TorannMagic.TorannMagicMod+CheckForStateChange_Patch.Postfix
+Pawn_HealthTracker.PostApplyDamage: post: TorannMagic.TorannMagicMod+PostApplyDamage_Patch.Postfix
+Pawn_HealthTracker.PreApplyDamage: PRE: JecsTools.HarmonyPatches.PreApplyDamage_PrePatch, PawnShields.HarmonyPatches.Patch_Pawn_HealthTracker_PreApplyDamage, TorannMagic.TorannMagicMod+PreApplyDamage_Patch.Prefix
+Pawn_InteractionsTracker.InteractionsTrackerTick: post: TorannMagic.TorannMagicMod+InteractionsTrackerTick_Patch.Postfix
+Pawn_NeedsTracker.ShouldHaveNeed: PRE: TorannMagic.TorannMagicMod+Pawn_NeedsTracker_Patch.Prefix
+Pawn_PathFollower.CostToMoveIntoCell: PRE: TorannMagic.TorannMagicMod.Pawn_PathFollower_Pathfinder_Prefix
+Pawn_SkillTracker.Learn: PRE: TorannMagic.TorannMagicMod+Pawn_SkillTracker_Base_Patch.Prefix
+Pawn_StanceTracker.StaggerFor: PRE: TorannMagic.TorannMagicMod.StaggerFor_Patch
+Pawn_StanceTracker.get_Staggered: PRE: TorannMagic.TorannMagicMod.Get_Staggered
+PlayDataLoader.DoPlayLoad: post: HugsLib.Patches.PlayDataLoader_Patch.InitModsHook
+Projectile.CanHit: post: JecsTools.HarmonyPatches.CanHit_PostFix
+QualityUtility.GenerateQualityCreatedByPawn: post: TorannMagic.TorannMagicMod+ArcaneForge_Quality_Patch.Postfix
+QuestPart_LendColonistsToFaction.Enable: post: TorannMagic.TorannMagicMod.QuestPart_LendColonists_Enable_NoUndead
+Recipe_Surgery.CheckSurgeryFail: PRE: TorannMagic.TorannMagicMod+CheckSurgeryFail_Base_Patch.Prefix
+Root.Update: post: HugsLib.Patches.Root_Patch.UpdateHook
+Root_Play.SetupForQuickTestPlay: TRANS: HugsLib.Patches.RootPlay_TestPlay_Patch.InjectCustomQuickstartSettings
+SelectionDrawer.DrawSelectionBracketFor: PRE: DefModExtension_BigBox.HarmonyDefModExtension_BigBox.DrawSelectionBracketFor_PreFix
+ShortHashGiver.GiveShortHash: PRE: AbilityUser.AbilityUserMod.GiveShortHash_PrePatch
+SkillRecord.Learn: PRE: TorannMagic.TorannMagicMod+SkillRecord_Patch.Prefix
+StatExtension.GetStatValue: post: CompSlotLoadable.HarmonyCompSlotLoadable.GetStatValue_PostFix
+StatWorker.GetExplanationUnfinalized: TRANS: PawnShields.HarmonyPatches.Transpiler_StatWorker_GetExplanationUnfinalized
+StatWorker.GetValueUnfinalized: post: PawnShields.HarmonyPatches.Patch_StatWorker_GetValueUnfinalized
+StatWorker.StatOffsetFromGear: post: CompSlotLoadable.HarmonyCompSlotLoadable.StatOffsetFromGear_PostFix
+StockGenerator_Animals.HandlesThingDef: PRE: TorannMagic.TorannMagicMod+StockGenerator_Animals_Patch.Prefix
+Targeter.ConfirmStillValid: PRE: AbilityUser.AbilityUserMod.ConfirmStillValid
+Targeter.ProcessInputEvents: PRE: AbilityUser.AbilityUserMod.ProcessInputEvents_PreFix
+Targeter.TargeterOnGUI: post: TorannMagic.TorannMagicMod.Targeter_Casting_Postfix
+Targeter.TargeterUpdate: post: AbilityUser.AbilityUserMod.TargeterUpdate_PostFix
+Thing.IDNumberFromThingID: post: TorannMagic.TorannMagicMod+TechnoWeapon_ThingID.Postfix
+Thing.TakeDamage: PRE: CompDeflector.HarmonyCompDeflector.TakeDamage_PreFix
+Thing.get_DefaultGraphic: post: CompOversizedWeapon.HarmonyCompOversizedWeapon.get_Graphic_PostFix
+ThingFilter.SetFromPreset: PRE: TorannMagic.TorannMagicMod.DefaultStorageSettings_IncludeMagicItems
+ThingWithComps.InitializeComps: post: AbilityUser.AbilityUserMod.InitializeComps_PostFix
+UIRoot.UIRootOnGUI: post: HugsLib.Patches.UIRoot_Patch.OnGUIHook
+Verb.CanHitCellFromCellIgnoringRange: PRE: [2000]TorannMagic.TorannMagicMod.RimmuNation_CHCFCIR_Patch, JecsTools.HarmonyPatches.CanHitCellFromCellIgnoringRange_Prefix
+Verb.TryCastNextBurstShot: post: TorannMagic.TorannMagicMod+TryCastNextBurstShot_Monk_Patch.Postfix
+Verb.TryFindShootLineFromTo: PRE: TorannMagic.TorannMagicMod+TryFindShootLineFromTo_Base_Patch.Prefix
+Verb.TryStartCastOn: PRE: AbilityUser.AbilityUserMod.TryStartCastOn_Prefix, CompActivatableEffect.HarmonyCompActivatableEffect.TryStartCastOnPrefix
+Verb.get_DirectOwner: PRE: AbilityUser.AbilityUserMod.get_DirectOwner_Prefix
+Verb.get_UIIcon: PRE: AbilityUser.AbilityUserMod.get_UIIcon
+Verb_LaunchProjectile.get_Projectile: PRE: AbilityUser.AbilityUserMod.get_Projectile_Prefix, TorannMagic.TorannMagicMod.Get_Projectile_ES
+Verb_MeleeAttack.SoundHitBuilding: post: CompExtraSounds.HarmonyCompExtraSounds.SoundHitBuildingPrefix
+Verb_MeleeAttack.SoundHitPawn: post: CompExtraSounds.HarmonyCompExtraSounds.SoundHitPawnPrefix
+Verb_MeleeAttack.SoundMiss: post: CompExtraSounds.HarmonyCompExtraSounds.SoundMissPrefix
+Verb_MeleeAttackDamage.DamageInfosToApply: post: CompSlotLoadable.HarmonyCompSlotLoadable.DamageInfosToApply_PostFix
+VersionControl.DrawInfoInCorner: post: HarmonyMod.VersionControl_DrawInfoInCorner_Patch.Postfix
+WealthWatcher.ForceRecount: post: TorannMagic.TorannMagicMod.WealthWatcher_ClassAdjustment_Postfix
+WeatherEvent_LightningStrike.FireEvent: PRE: TorannMagic.TorannMagicMod+LightningStrike_DarkThunderstorm_Patch.Prefix
+WeatherManager.TransitionTo: post: TorannMagic.TorannMagicMod+WeatherManager_RemoveDarkThunderstorm_Postfix.Postfix
+WorkGiver_DoBill.JobOnThing: post: TorannMagic.TorannMagicMod+RegrowthSurgery_WorkGiver_Patch.Postfix
+WorkGiver_Researcher.ShouldSkip: PRE: TorannMagic.TorannMagicMod+WorkGiver_Researcher_Patch.Prefix
+WorkGiver_Tend.HasJobOnThing: post: TorannMagic.TorannMagicMod+WorkGiver_Tend_Patch.Postfix
+WorldSelector.AutoOrderToTileNow: post: JecsTools.HarmonyCaravanPatches.AutoOrderToTileNow_Jobs
+WorldSelector.SelectableObjectsUnderMouse: post: JecsTools.HarmonyCaravanPatches.SelectableObjectsUnderMouse_InvisHandler
+Harmony versions present: 2.0.0.8: net.pardeike.rimworld.lib.harmony, UnlimitedHugs.HugsLib, jecstools.jecrell.abilityuser, rimworld.torann.tmagic, jecstools.jecrell.comps.activator, jecstools.jecrell.comps.slotloadable, Torann.ARimworldOfMagic, jecstools.jecrell.humanlikeorders, jecstools.jecrell.main, jecstools.jecrell.comps.installedpart, jecstools.chjees.shields, jecstools.jecrell.caravanjobs, jecstools.jecrell.comps.oversized, jecstools.jecrell.comps.deflector, jecstools.jecrell.defmodextensions.bigbox, jecstools.jecrell.comps.sounds
+
+Platform information: (hidden, use publishing options to include)
+
+Log file contents:
+Mono path[0] = '[Rimworld_dir]/RimWorldWin64_Data/Managed'
+Mono config path = '[Rimworld_dir]/MonoBleedingEdge/etc'
+Initialize engine version: 2019.2.17f1 (8e603399ca02)
+[XR] Discovering subsystems at path [Rimworld_dir]/RimWorldWin64_Data/UnitySubsystems
+GfxDevice: [Renderer information redacted]
+Begin MonoManager ReloadAssembly
+RimWorld 1.1.2589 rev1331
+[HugsLib] version 7.1.3
+Config error in TM_RaiseUndead: description has trailing whitespace
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Config error in TM_RaiseUndead: description has trailing whitespace
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Translation data for language Simplified Chinese has 256 errors. Generate translation report for more info.
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+[HugsLib] initializing ARimWorldOfMagic
+Unloading 5 Unused Serialized files (Serialized files now loaded: 1)
+
+Unloading 51 unused Assets to reduce memory usage. Loaded Objects now: 12200.
+Total: 83.723600 ms (FindLiveObjects: 0.853200 ms CreateObjectMapping: 0.493800 ms MarkObjects: 82.258700 ms  DeleteObjects: 0.116400 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 1)
+
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 12459.
+Total: 76.772200 ms (FindLiveObjects: 0.490500 ms CreateObjectMapping: 0.430200 ms MarkObjects: 75.789600 ms  DeleteObjects: 0.061400 ms)
+
+Initializing new game with mods:
+  - brrainz.harmony
+  - Ludeon.RimWorld
+  - Ludeon.RimWorld.Royalty
+  - UnlimitedHugs.HugsLib
+  - jecrell.jecstools
+  - Torann.ARimworldOfMagic
+Unloading 0 Unused Serialized files (Serialized files now loaded: 1)
+
+Unloading 0 unused Assets to reduce memory usage. Loaded Objects now: 16678.
+Total: 103.973400 ms (FindLiveObjects: 0.739700 ms CreateObjectMapping: 1.036800 ms MarkObjects: 102.163600 ms  DeleteObjects: 0.032800 ms)
+
+Removing trait 冰系魔法师
+Exception filling tab TorannMagic.ITab_Pawn_Magic: System.NullReferenceException: Object reference not set to an instance of an object
+  at TorannMagic.MagicCardUtility.InfoPane (UnityEngine.Rect inRect, TorannMagic.CompAbilityUserMagic compMagic, Verse.Pawn pawn) [0x001d7] in <1349a35aa6274a0283337c030b3240a2>:0 
+  at TorannMagic.MagicCardUtility.DrawMagicCard (UnityEngine.Rect rect, Verse.Pawn pawn) [0x00199] in <1349a35aa6274a0283337c030b3240a2>:0 
+  at TorannMagic.ITab_Pawn_Magic.FillTab () [0x0002d] in <1349a35aa6274a0283337c030b3240a2>:0 
+  at Verse.InspectTabBase+<>c__DisplayClass14_0.<DoTabGUI>b__0 () [0x00039] in <29684bdca4b441d38f64a3f064edc8ed>:0 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Grammar unresolvable. Root 'r_logentry'
+
+---------- Custom rules ----------
+■INITIATOR_nameFull → <color=#D09B61FF>Dolores 'Dumbo' Waller</color>
+■INITIATOR_label → <color=#D09B61FF>Dumbo</color>
+■INITIATOR_definite → <color=#D09B61FF>Dumbo</color>
+■INITIATOR_nameDef → <color=#D09B61FF>Dumbo</color>
+■INITIATOR_indefinite → <color=#D09B61FF>Dumbo</color>
+■INITIATOR_nameIndef → <color=#D09B61FF>Dumbo</color>
+■INITIATOR_pronoun → 她
+■INITIATOR_possessive → 她的
+■INITIATOR_objective → 她
+■INITIATOR_factionName → <color=#00BCD8FF>新移民</color>
+■INITIATOR_kind → 殖民者
+■INITIATOR_title → 闪耀世界读心者
+■INITIATOR_titleIndef → 闪耀世界读心者
+■INITIATOR_titleDef → 闪耀世界读心者
+■INITIATOR_age → 46
+■INITIATOR_chronologicalAge → 95
+■formerlyColonistInfo → Dumbo曾经是你的派系的一员。
+■INITIATOR_relationInfo → 
+■RECIPIENT_nameFull → <color=#D09B61FF>Stanley Barrett</color>
+■RECIPIENT_label → <color=#D09B61FF>Stanley</color>
+■RECIPIENT_definite → <color=#D09B61FF>Stanley</color>
+■RECIPIENT_nameDef → <color=#D09B61FF>Stanley</color>
+■RECIPIENT_indefinite → <color=#D09B61FF>Stanley</color>
+■RECIPIENT_nameIndef → <color=#D09B61FF>Stanley</color>
+■RECIPIENT_pronoun → 他
+■RECIPIENT_possessive → 他的
+■RECIPIENT_objective → 他
+■RECIPIENT_factionName → <color=#00BCD8FF>新移民</color>
+■RECIPIENT_kind → 殖民者
+■RECIPIENT_title → 儿童明星
+■RECIPIENT_titleIndef → 儿童明星
+■RECIPIENT_titleDef → 儿童明星
+■RECIPIENT_age → 15
+■RECIPIENT_chronologicalAge → 821
+■formerlyColonistInfo → Stanley曾经是你的派系的一员。
+■RECIPIENT_relationInfo → 
+
+---------- Bare includes ----------
+  logentry → 跟随 [other_nameShortIndef] 学习魔法理论.
+
+---------- Constants ----------
+INITIATOR_faction                      PlayerColony
+INITIATOR_formerlyColonist             True
+INITIATOR_flesh                        Normal
+INITIATOR_gender                       Female
+RECIPIENT_faction                      PlayerColony
+RECIPIENT_formerlyColonist             True
+RECIPIENT_flesh                        Normal
+RECIPIENT_gender                       Male
+
+---------- Grammar resolution steps ----------
+
+     r_logentry → UNRESOLVABLE
+
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Failed to resolve text. Trying again with English.
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Grammar unresolvable. Root 'r_logentry'
+
+---------- Custom rules ----------
+■INITIATOR_nameFull → <color=#D09B61FF>Axle Hurtle</color>
+■INITIATOR_label → <color=#D09B61FF>Hurtle</color>
+■INITIATOR_definite → <color=#D09B61FF>Hurtle</color>
+■INITIATOR_nameDef → <color=#D09B61FF>Hurtle</color>
+■INITIATOR_indefinite → <color=#D09B61FF>Hurtle</color>
+■INITIATOR_nameIndef → <color=#D09B61FF>Hurtle</color>
+■INITIATOR_pronoun → 他
+■INITIATOR_possessive → 他的
+■INITIATOR_objective → 他
+■INITIATOR_factionName → <color=#00BCD8FF>新移民</color>
+■INITIATOR_kind → 殖民者
+■INITIATOR_title → 被雇佣的刺客
+■INITIATOR_titleIndef → 被雇佣的刺客
+■INITIATOR_titleDef → 被雇佣的刺客
+■INITIATOR_age → 37
+■INITIATOR_chronologicalAge → 55
+■formerlyColonistInfo → Hurtle曾经是你的派系的一员。
+■INITIATOR_relationInfo → 
+■RECIPIENT_nameFull → <color=#D09B61FF>Stanley Barrett</color>
+■RECIPIENT_label → <color=#D09B61FF>Stanley</color>
+■RECIPIENT_definite → <color=#D09B61FF>Stanley</color>
+■RECIPIENT_nameDef → <color=#D09B61FF>Stanley</color>
+■RECIPIENT_indefinite → <color=#D09B61FF>Stanley</color>
+■RECIPIENT_nameIndef → <color=#D09B61FF>Stanley</color>
+■RECIPIENT_pronoun → 他
+■RECIPIENT_possessive → 他的
+■RECIPIENT_objective → 他
+■RECIPIENT_factionName → <color=#00BCD8FF>新移民</color>
+■RECIPIENT_kind → 殖民者
+■RECIPIENT_title → 儿童明星
+■RECIPIENT_titleIndef → 儿童明星
+■RECIPIENT_titleDef → 儿童明星
+■RECIPIENT_age → 15
+■RECIPIENT_chronologicalAge → 821
+■formerlyColonistInfo → Stanley曾经是你的派系的一员。
+■RECIPIENT_relationInfo → 
+
+---------- Bare includes ----------
+  logentry → 与 [other_nameShortIndef] 进行愉快交流.
+
+---------- Constants ----------
+INITIATOR_faction                      PlayerColony
+INITIATOR_formerlyColonist             True
+INITIATOR_flesh                        Normal
+INITIATOR_gender                       Male
+RECIPIENT_faction                      PlayerColony
+RECIPIENT_formerlyColonist             True
+RECIPIENT_flesh                        Normal
+RECIPIENT_gender                       Male
+
+---------- Grammar resolution steps ----------
+
+     r_logentry → UNRESOLVABLE
+
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Failed to resolve text. Trying again with English.
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
